@@ -12,20 +12,49 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 
 
-.container {
-    max-height: 80px;
-    
+.container-hero {
+    background-color: #B4D0E7;
+    min-height: 300px;
+    color: black; 
+}
+img {
+    max-width: 100%;
 }
 .row {
     display: flex;
     justify-content: space-between;
-    color: black;
-    
+    color: black;   
 }
+.row-hero {
+    display: flex;
+    justify-content: center;
+    color: black;   
+    padding: 30px;
+}
+
 .col {
     padding: 20px;
 }
+.col-1 {
+   
+	flex-basis: 50%;    
+}
+.col-2 {
+	flex-basis: calc((100% / 12) * 2);  
+}
 
+.hero-title {
+    font-size: 60px;
+    text-align: center;
+}
+.photo-hero {
+    flex-grow: 2;
+}
+.hero-info {
+    margin: 20px;
+
+    
+}
 .a-button {
     color: white;
     background-color: blue;
@@ -35,15 +64,19 @@ font-family: 'Roboto', sans-serif;
 .link-header > li {
     display:inline;
     color: black;
-    margin: 5px auto;
-    
+    margin: 10px;   
 }
 a {
-
+    color: black;
 }
 
 /* DEBUG*/
 .debug .header {
     background-color: white;
     border: 2px solid red;
+}
+.debug .container-hero {
+    color: black;
+    background-color: #B4D0E7 ;
+    height: 550px;
 }
