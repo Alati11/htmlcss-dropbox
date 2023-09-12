@@ -38,11 +38,13 @@ img {
 .container {
 	max-width: 1000px;
 	margin: 0 auto;
+    border: 2px solid red;
 }
 
 .container-lg {
 	max-width: 1200px;
 	margin: 0 auto;
+    
 }
 
 .container-fluid {
@@ -54,6 +56,7 @@ img {
     display: flex;
     justify-content: space-between;
     color: black;   
+    padding: 20px;
 }
 .row-hero {
     display: flex;
@@ -77,13 +80,7 @@ img {
 .col-8 {
 	width: calc(100% * 8 / 12);
 }
-.info{
-   
-    display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 24px;
-}
+
 
 .col {
     padding: 20px;
@@ -94,6 +91,15 @@ img {
 .col-2 {
 	flex-basis: calc((100% / 12) * 2); 
 }
+
+.info{
+   
+    display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+}
+
 .hero {
 	background-color: var(--light-blue);
 	padding-top: 80px;
@@ -125,7 +131,14 @@ i {
     font-size: 45px;
     margin-left: 15px;
 }
+.container-option i {
+    font-size: 18px;;
+    
+}
 
+.container-option {
+    padding: 15px 5px;
+}
 
 .link-header > li {
     display:inline;
@@ -138,6 +151,11 @@ a {
     text-decoration: none;
 	color: currentColor;
 }
+.plane {
+    border: 2px solid gray ;
+    min-height: 700px;
+    padding: 10px;
+}
 
 
 /* DEBUG*/
@@ -147,7 +165,10 @@ a {
 }
 .debug .container-lg {
     color: black;
-    /* background-color: #B4D0E7 ; */
-      
-    
+    /* background-color: #B4D0E7 ; */  
+}
+
+.debug .col-4 {
+   
+   
 }
