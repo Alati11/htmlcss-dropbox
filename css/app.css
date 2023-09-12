@@ -4,8 +4,18 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+:root {
+	--blue: #0061ff;
+	--light-blue: #b4d0e7;
+	--dark-blue: #0d2481;
+	--dark: black;
+	--bordeaux: #61082b;
+	--green: #a2d39b;
+	--yellow: #ffd830;
+	--red: #ff1c1c;
+	--dark-red: #d5001f;
+	--light-gray: #f5f5f5;
+	--light: #ffffff;
 }
 
 font-family: 'Open Sans', sans-serif;
@@ -15,11 +25,31 @@ font-family: 'Roboto', sans-serif;
 .container-hero {
     background-color: #B4D0E7;
     min-height: 300px;
+    width: 1200px;
     color: black; 
+
 }
 img {
     max-width: 100%;
 }
+
+/* LAYOUT */
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.container-lg {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -28,16 +58,33 @@ img {
 .row-hero {
     display: flex;
     justify-content: center;
+    flex-wrap: ;
     color: black;   
     padding: 30px;
-   
+}
+.col-12 {
+	width: 100%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-4 {
+	width: calc(100% * 4 / 12);
+}
+
+.col-8 {
+	width: calc(100% * 8 / 12);
 }
 .info{
-    flex-grow: 0;
+   
+    display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
 }
-.hero-photo {
-    flex-grow: 2;
-}
+
 .col {
     padding: 20px;
 }
@@ -47,24 +94,38 @@ img {
 .col-2 {
 	flex-basis: calc((100% / 12) * 2); 
 }
-
-.info {
-    flex-basis: 30%;
+.hero {
+	background-color: var(--light-blue);
+	padding-top: 80px;
 }
+
 .hero-title {
-    font-size: 60px;
+    font-size: 76px;
+	line-height: 1.2;
+	font-weight: 900;
     text-align: center;
 }
 
 .hero-info {
-    margin: 20px;     
+    margin: 20px;
+    align-items: flex-start; 
+        
 }
 
 .a-button {
-    color: white;
-    background-color: blue;
-    padding: 5px;  
+	background-color: var(--blue);
+	color: white;
+	display: inline-block;
+	line-height: 44px;
+	font-size: 18px;
+	padding: 0 16px;
+    margin-left: 15px;
 }
+i {
+    font-size: 45px;
+    margin-left: 15px;
+}
+
 
 .link-header > li {
     display:inline;
@@ -74,19 +135,19 @@ img {
 
 a {
     color: black;
+    text-decoration: none;
+	color: currentColor;
 }
-.fa-solid .fa-arrow-down {
-    
-    ;
-}
+
 
 /* DEBUG*/
 .debug .header {
     background-color: white;
     /* border: 2px solid red; */
 }
-.debug .container-hero {
+.debug .container-lg {
     color: black;
-    background-color: #B4D0E7 ;
-    height: 550px;
+    /* background-color: #B4D0E7 ; */
+      
+    
 }
