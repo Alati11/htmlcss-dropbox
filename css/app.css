@@ -315,7 +315,7 @@ ul {
     background-color: gray;
 }   
 .bg-red {
-    background-color: red;
+    
     display: flex;
     flex-wrap: wrap;
     min-height: 400 px;
@@ -323,6 +323,24 @@ ul {
 .bg-blue {
     background-color: #0061ff;
 }
+.bg-green {
+    background-color: #a2d39b;
+    color: white;
+}
+.bg-bordeaux {
+    background-color: var(--bordeaux);
+    
+}
+.bg-blue {
+    background-color:#0061ff;
+    color: white;
+}
+.bg-redligth {
+    background-color: var(--red);
+    color: white;
+    
+}
+
     .row-designit {
         max-width: 100%;
 
