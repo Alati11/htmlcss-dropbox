@@ -91,6 +91,7 @@ img {
 
 
 .col {
+
     padding: 20px;
 }
 .col-1 {
@@ -129,11 +130,13 @@ img {
 .a-button {
 	background-color: var(--blue);
 	color: white;
-	display: inline-block;
+	/* display: inline-block; */
 	line-height: 44px;
 	font-size: 18px;
 	padding: 0 16px;
     margin-left: 15px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 i {
     font-size: 15px;
@@ -177,7 +180,11 @@ hr {
     border: 1px solid gray ;
     min-height: 700px;
     padding: 10px;
-    
+}
+.plane-lg {
+    border: 1px solid gray ;
+    height: auto;
+    padding: 10px;
 }
 /* card*/
 .title {
@@ -210,6 +217,41 @@ ul {
     margin-top: 30px;
     margin-left: -15px;
     margin-bottom: 30px;
+}
+[class^='col'] > .card {
+	height: 100%;
+}
+.card-plan {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.card-plan .card__header {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.card-plan .card__header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	/* align-items: baseline; */
+}
+.card-plan .card__body {
+	padding-top: 36px;
+	padding-bottom: 36px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.card-plan.card-plan--landscape .row {
+	flex-wrap: nowrap;
+	gap: 50px;
+}
+.card__title {
+    line-height: 2em;
+}.card__subtitle {
+    line-height: 2em;
+    margin-bottom: 20px;
 }
 
 /* features*/
