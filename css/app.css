@@ -44,7 +44,7 @@ img {
 .container {
 	max-width: 1000px;
 	margin: 0 auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .container-lg {
@@ -82,6 +82,7 @@ img {
 
 .col-4 {
 	width: calc(100% * 4 / 12);
+
 }
 
 .col-8 {
@@ -197,7 +198,11 @@ hr {
 ul { 
     /* text-indent: 10px; */
     list-style: none;
-    line-height: 35px;
+    /* line-height: 35px; */
+    display: flex;
+	flex-direction: column;
+	gap: 18px;
+	font-size: 14px;
     
 }
 .button-trial {
@@ -207,6 +212,27 @@ ul {
     margin-bottom: 30px;
 }
 
+/* features*/
+.features {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	font-size: 14px;
+}
+.features__item {
+	display: flex;
+	gap: 10px;
+	align-items: baseline;
+}
+.features.blue-icons i {
+	color: var(--blue);
+}
+
+.mb-10 {
+    margin-top: 40px;
+	margin-bottom: 15px;
+    margin-left: 15px;
+}
 /* DEBUG*/
 .debug .header {
     background-color: white;
