@@ -195,8 +195,9 @@ hr {
     list-style: none;
 }
 ul { 
+    /* text-indent: 10px; */
     list-style: none;
-    line-height: 15px;
+    line-height: 35px;
     
 }
 .button-trial {
