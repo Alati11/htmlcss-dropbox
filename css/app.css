@@ -253,7 +253,33 @@ ul {
     line-height: 2em;
     margin-bottom: 20px;
 }
+/* partner*/
+.partner {
+    margin-top: 50px;
+}
 
+.partner .partner-text {
+    padding: 35px;
+}
+.partner-title {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.partner-subtitle {
+    font-size: 20px;
+    line-height: 1.2em;
+    
+}
+.button-partner {
+    background-color: white;
+    color: gray;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 20px;
+
+    
+
+}
 /* features*/
 .features {
 	display: flex;
